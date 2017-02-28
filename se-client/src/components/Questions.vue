@@ -1,7 +1,11 @@
 <template>
   <div class="content">
-    <div  class="box" v-for="question in questions">
-      <question :content="question"></question>
+    <div  class="box is-red" v-for="question in questions">
+      <article class="media">
+        <div class="media-content">
+          <question :content="question"></question>
+        </div>
+      </article>
     </div>
   </div>
 </template>
